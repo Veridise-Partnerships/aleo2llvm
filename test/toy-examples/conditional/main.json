@@ -1,0 +1,44 @@
+{
+  "module": "conditional.aleo",
+  "functions": [
+    {
+      "name": "main",
+      "arguments": [
+        {
+          "name": "self.caller",
+          "type": "i128",
+          "visibility": "public"
+        },
+        {
+          "name": "r0",
+          "type": "i1",
+          "visibility": "private"
+        }
+      ],
+      "variables": [
+        {
+          "name": "r0",
+          "type": "i1*",
+          "visibility": ""
+        },
+        {
+          "name": "r1",
+          "type": "i1*",
+          "visibility": ""
+        },
+        {
+          "name": "self.caller",
+          "type": "i128*",
+          "visibility": ""
+        }
+      ],
+      "returns": [
+        {
+          "name": "r1",
+          "type": "i1",
+          "visibility": "public"
+        }
+      ]
+    }
+  ]
+}

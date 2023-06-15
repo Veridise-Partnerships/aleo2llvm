@@ -1,0 +1,39 @@
+{
+  "module": "simple.aleo",
+  "functions": [
+    {
+      "name": "main",
+      "arguments": [
+        {
+          "name": "self.caller",
+          "type": "i128",
+          "visibility": "public"
+        },
+        {
+          "name": "r0",
+          "type": "i32",
+          "visibility": "private"
+        }
+      ],
+      "variables": [
+        {
+          "name": "r0",
+          "type": "i32*",
+          "visibility": ""
+        },
+        {
+          "name": "self.caller",
+          "type": "i128*",
+          "visibility": ""
+        }
+      ],
+      "returns": [
+        {
+          "name": "r0",
+          "type": "i32",
+          "visibility": "public"
+        }
+      ]
+    }
+  ]
+}

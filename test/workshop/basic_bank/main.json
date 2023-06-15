@@ -1,0 +1,2812 @@
+{
+  "module": "basic_bank.aleo",
+  "functions": [
+    {
+      "name": "calculate_interest",
+      "arguments": [
+        {
+          "name": "r0",
+          "type": "i64",
+          "visibility": ""
+        },
+        {
+          "name": "r1",
+          "type": "i64",
+          "visibility": ""
+        },
+        {
+          "name": "r2",
+          "type": "i64",
+          "visibility": ""
+        }
+      ],
+      "variables": [
+        {
+          "name": "r24",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r178",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r32",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r46",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r295",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r476",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r199",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r208",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r231",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r377",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r35",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r487",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r435",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r134",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r57",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r142",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r378",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r434",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r480",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r188",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r262",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r84",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r462",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r26",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r44",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r97",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r236",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r69",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r152",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r279",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r463",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r43",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r179",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r348",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r413",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r297",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r8",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r237",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r169",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r265",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r446",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r381",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r301",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r104",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r164",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r34",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r327",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r289",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r172",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r349",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r474",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r495",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r180",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r450",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r324",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r257",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r451",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r165",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r225",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r498",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r3",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r60",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r10",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r468",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r207",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r431",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r234",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r285",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r421",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r138",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r56",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r148",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r83",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r191",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r496",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r71",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r106",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r238",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r189",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r22",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r153",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r155",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r345",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r461",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r48",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r201",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r335",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r174",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r62",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r319",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r500",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r100",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r248",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r190",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r36",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r175",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r77",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r135",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r121",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r186",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r299",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r139",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r291",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r479",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r239",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r316",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r87",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r145",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r338",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r391",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r256",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r417",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r484",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r140",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r76",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r161",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r79",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r328",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r358",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r198",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r264",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r394",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r443",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r0",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r205",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r125",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r158",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r489",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r232",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r245",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r266",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r65",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r283",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r294",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r493",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r167",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r251",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r162",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r305",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r111",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r273",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r277",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r4",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r441",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r414",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r19",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r465",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r215",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r292",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r323",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r438",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r226",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r290",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r271",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r360",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r371",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r259",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r204",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r23",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r63",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r229",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r467",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r497",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r15",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r383",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r423",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r411",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r50",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r98",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r455",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r321",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r481",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r373",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r40",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r318",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r322",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r490",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r499",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r58",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r66",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r282",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r217",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r296",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r447",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r372",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r367",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r439",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r448",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r88",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r397",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r276",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r407",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r171",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r396",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r281",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r392",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r29",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r127",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r418",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r430",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r38",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r124",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r233",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r209",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r388",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r308",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r246",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r101",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r131",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r177",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r336",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r356",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r478",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r274",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r302",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r402",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r112",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r365",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r333",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r16",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r166",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r472",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r91",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r7",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r123",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r287",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r310",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r491",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r144",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r347",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r304",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r387",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r160",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r194",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r181",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r14",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r307",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r173",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r85",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r216",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r235",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r96",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r157",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r80",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r122",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r20",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r412",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r2",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r420",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r329",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r82",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r351",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r202",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r306",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r376",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r74",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r432",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r5",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r68",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r25",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r168",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r272",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r17",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r457",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r330",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r460",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r320",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r260",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r64",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r147",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r390",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r154",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r255",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r357",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r214",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r452",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r185",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r78",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r254",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r384",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r303",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r444",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r70",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r18",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r93",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r110",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r211",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r403",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r442",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r200",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r486",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r118",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r184",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r355",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r243",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r132",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r449",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r250",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r343",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r354",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r315",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r326",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r400",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r422",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r1",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r426",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r249",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r159",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r253",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r311",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r108",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r6",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r261",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r454",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r424",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r469",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r313",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r401",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r222",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r210",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r247",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r263",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r398",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r492",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r192",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r137",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r445",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r344",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r341",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r92",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r193",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r146",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r187",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r350",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r42",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r395",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r126",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r61",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r136",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r59",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r270",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r267",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r213",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r369",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r309",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r27",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r95",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r293",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r483",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r252",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r203",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r428",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r52",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r364",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r475",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r67",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r240",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r415",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r477",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r244",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r419",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r359",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r143",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r280",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r102",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r370",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r242",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r141",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r221",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r45",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r13",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r81",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r363",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r11",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r75",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r410",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r337",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r275",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r120",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r382",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r385",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r30",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r183",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r317",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r393",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r103",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r458",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r405",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r346",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r380",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r408",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r453",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r488",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r55",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r288",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r21",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r149",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r72",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r151",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r502",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r466",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r170",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r429",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r94",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r286",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r353",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r115",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r404",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r437",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r470",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r456",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r89",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r389",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r473",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r219",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r325",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r485",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r73",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r41",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r109",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r130",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r196",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r278",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r416",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r427",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r300",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r269",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r312",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r298",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r362",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r361",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r223",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r331",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r99",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r241",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r107",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r197",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r31",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r352",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r117",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r128",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r129",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r163",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r374",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r206",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r218",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r314",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r54",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r195",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r12",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r436",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r268",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r116",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r105",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r113",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r176",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r340",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r220",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r375",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r284",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r494",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r459",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r156",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r482",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r49",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r227",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r409",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r33",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r471",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r53",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r342",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r37",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r114",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r228",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r224",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r9",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r368",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r464",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r90",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r86",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r212",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r230",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r379",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r334",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r47",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r332",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r386",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r258",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r440",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r339",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r501",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r39",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r366",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r399",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r182",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r433",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r425",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r150",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r28",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r51",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r406",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r119",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r133",
+          "type": "i64*",
+          "visibility": ""
+        }
+      ],
+      "returns": [
+        {
+          "name": "r502",
+          "type": "i64",
+          "visibility": ""
+        }
+      ]
+    },
+    {
+      "name": "issue",
+      "arguments": [
+        {
+          "name": "self.caller",
+          "type": "i128",
+          "visibility": "public"
+        },
+        {
+          "name": "r0",
+          "type": "i128",
+          "visibility": "private"
+        },
+        {
+          "name": "r1",
+          "type": "i64",
+          "visibility": "private"
+        }
+      ],
+      "variables": [
+        {
+          "name": "r0",
+          "type": "i128*",
+          "visibility": ""
+        },
+        {
+          "name": "self.caller",
+          "type": "i128*",
+          "visibility": ""
+        },
+        {
+          "name": "r2",
+          "type": "%Token*",
+          "visibility": ""
+        },
+        {
+          "name": "r1",
+          "type": "i64*",
+          "visibility": ""
+        }
+      ],
+      "returns": [
+        {
+          "name": "r2",
+          "type": "%Token = type { i128, i64, i64 }",
+          "visibility": "private"
+        }
+      ]
+    },
+    {
+      "name": "deposit.finalize",
+      "arguments": [
+        {
+          "name": "r0",
+          "type": "i128",
+          "visibility": ""
+        },
+        {
+          "name": "r1",
+          "type": "i64",
+          "visibility": ""
+        }
+      ],
+      "variables": [
+        {
+          "name": "r3",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r0",
+          "type": "i128*",
+          "visibility": ""
+        },
+        {
+          "name": "r2",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r1",
+          "type": "i64*",
+          "visibility": ""
+        }
+      ],
+      "returns": []
+    },
+    {
+      "name": "deposit",
+      "arguments": [
+        {
+          "name": "self.caller",
+          "type": "i128",
+          "visibility": "public"
+        },
+        {
+          "name": "r0",
+          "type": "%Token = type { i128, i64, i64 }",
+          "visibility": "private"
+        },
+        {
+          "name": "r1",
+          "type": "i64",
+          "visibility": "private"
+        }
+      ],
+      "variables": [
+        {
+          "name": "r3",
+          "type": "%Token*",
+          "visibility": ""
+        },
+        {
+          "name": "r0",
+          "type": "%Token*",
+          "visibility": ""
+        },
+        {
+          "name": "r4",
+          "type": "i128*",
+          "visibility": ""
+        },
+        {
+          "name": "self.caller",
+          "type": "i128*",
+          "visibility": ""
+        },
+        {
+          "name": "r2",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r1",
+          "type": "i64*",
+          "visibility": ""
+        }
+      ],
+      "returns": [
+        {
+          "name": "r3",
+          "type": "%Token = type { i128, i64, i64 }",
+          "visibility": "private"
+        }
+      ]
+    },
+    {
+      "name": "withdraw.finalize",
+      "arguments": [
+        {
+          "name": "r0",
+          "type": "i128",
+          "visibility": ""
+        },
+        {
+          "name": "r1",
+          "type": "i64",
+          "visibility": ""
+        }
+      ],
+      "variables": [
+        {
+          "name": "r3",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r0",
+          "type": "i128*",
+          "visibility": ""
+        },
+        {
+          "name": "r2",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r1",
+          "type": "i64*",
+          "visibility": ""
+        }
+      ],
+      "returns": []
+    },
+    {
+      "name": "withdraw",
+      "arguments": [
+        {
+          "name": "self.caller",
+          "type": "i128",
+          "visibility": "public"
+        },
+        {
+          "name": "r0",
+          "type": "i128",
+          "visibility": "private"
+        },
+        {
+          "name": "r1",
+          "type": "i64",
+          "visibility": "private"
+        },
+        {
+          "name": "r2",
+          "type": "i64",
+          "visibility": "private"
+        },
+        {
+          "name": "r3",
+          "type": "i64",
+          "visibility": "private"
+        }
+      ],
+      "variables": [
+        {
+          "name": "r3",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r0",
+          "type": "i128*",
+          "visibility": ""
+        },
+        {
+          "name": "r4",
+          "type": "i128*",
+          "visibility": ""
+        },
+        {
+          "name": "self.caller",
+          "type": "i128*",
+          "visibility": ""
+        },
+        {
+          "name": "r2",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r5",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r1",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r6",
+          "type": "%Token*",
+          "visibility": ""
+        }
+      ],
+      "returns": [
+        {
+          "name": "r6",
+          "type": "%Token = type { i128, i64, i64 }",
+          "visibility": "private"
+        }
+      ]
+    }
+  ]
+}

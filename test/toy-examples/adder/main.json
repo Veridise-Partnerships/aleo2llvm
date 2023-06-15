@@ -1,0 +1,54 @@
+{
+  "module": "adder.aleo",
+  "functions": [
+    {
+      "name": "main",
+      "arguments": [
+        {
+          "name": "self.caller",
+          "type": "i128",
+          "visibility": "public"
+        },
+        {
+          "name": "r0",
+          "type": "i32",
+          "visibility": "private"
+        },
+        {
+          "name": "r1",
+          "type": "i32",
+          "visibility": "public"
+        }
+      ],
+      "variables": [
+        {
+          "name": "self.caller",
+          "type": "i128*",
+          "visibility": ""
+        },
+        {
+          "name": "r0",
+          "type": "i32*",
+          "visibility": ""
+        },
+        {
+          "name": "r2",
+          "type": "i32*",
+          "visibility": ""
+        },
+        {
+          "name": "r1",
+          "type": "i32*",
+          "visibility": ""
+        }
+      ],
+      "returns": [
+        {
+          "name": "r2",
+          "type": "i32",
+          "visibility": "public"
+        }
+      ]
+    }
+  ]
+}

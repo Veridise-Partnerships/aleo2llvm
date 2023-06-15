@@ -1,0 +1,39 @@
+{
+  "module": "badrecord.aleo",
+  "functions": [
+    {
+      "name": "main",
+      "arguments": [
+        {
+          "name": "self.caller",
+          "type": "i128",
+          "visibility": "public"
+        },
+        {
+          "name": "r0",
+          "type": "%token = type { i128, i64, i64 }",
+          "visibility": "private"
+        }
+      ],
+      "variables": [
+        {
+          "name": "r0",
+          "type": "%token*",
+          "visibility": ""
+        },
+        {
+          "name": "self.caller",
+          "type": "i128*",
+          "visibility": ""
+        }
+      ],
+      "returns": [
+        {
+          "name": "r0.owner",
+          "type": "i128",
+          "visibility": "public"
+        }
+      ]
+    }
+  ]
+}

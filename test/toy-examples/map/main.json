@@ -1,0 +1,87 @@
+{
+  "module": "map.aleo",
+  "functions": [
+    {
+      "name": "main.finalize",
+      "arguments": [
+        {
+          "name": "r0",
+          "type": "i128",
+          "visibility": ""
+        },
+        {
+          "name": "r1",
+          "type": "i64",
+          "visibility": ""
+        }
+      ],
+      "variables": [
+        {
+          "name": "r3",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r2",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r0",
+          "type": "i128*",
+          "visibility": ""
+        },
+        {
+          "name": "r1",
+          "type": "i64*",
+          "visibility": ""
+        }
+      ],
+      "returns": []
+    },
+    {
+      "name": "main",
+      "arguments": [
+        {
+          "name": "self.caller",
+          "type": "i128",
+          "visibility": "public"
+        },
+        {
+          "name": "r0",
+          "type": "i128",
+          "visibility": "private"
+        },
+        {
+          "name": "r1",
+          "type": "i64",
+          "visibility": "private"
+        }
+      ],
+      "variables": [
+        {
+          "name": "self.caller",
+          "type": "i128*",
+          "visibility": ""
+        },
+        {
+          "name": "r0",
+          "type": "i128*",
+          "visibility": ""
+        },
+        {
+          "name": "r1",
+          "type": "i64*",
+          "visibility": ""
+        }
+      ],
+      "returns": [
+        {
+          "name": "r1",
+          "type": "i64",
+          "visibility": "private"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "module": "auction.aleo",
+  "functions": [
+    {
+      "name": "place_bid",
+      "arguments": [
+        {
+          "name": "self.caller",
+          "type": "i128",
+          "visibility": "public"
+        },
+        {
+          "name": "r0",
+          "type": "i128",
+          "visibility": "private"
+        },
+        {
+          "name": "r1",
+          "type": "i64",
+          "visibility": "private"
+        }
+      ],
+      "variables": [
+        {
+          "name": "r0",
+          "type": "i128*",
+          "visibility": ""
+        },
+        {
+          "name": "r2",
+          "type": "%Bid*",
+          "visibility": ""
+        },
+        {
+          "name": "r1",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "self.caller",
+          "type": "i128*",
+          "visibility": ""
+        }
+      ],
+      "returns": [
+        {
+          "name": "r2",
+          "type": "%Bid = type { i128, i64, i128, i64, i1 }",
+          "visibility": "private"
+        }
+      ]
+    },
+    {
+      "name": "resolve",
+      "arguments": [
+        {
+          "name": "self.caller",
+          "type": "i128",
+          "visibility": "public"
+        },
+        {
+          "name": "r0",
+          "type": "%Bid = type { i128, i64, i128, i64, i1 }",
+          "visibility": "private"
+        },
+        {
+          "name": "r1",
+          "type": "%Bid = type { i128, i64, i128, i64, i1 }",
+          "visibility": "private"
+        }
+      ],
+      "variables": [
+        {
+          "name": "r0",
+          "type": "%Bid*",
+          "visibility": ""
+        },
+        {
+          "name": "r1",
+          "type": "%Bid*",
+          "visibility": ""
+        },
+        {
+          "name": "r8",
+          "type": "%Bid*",
+          "visibility": ""
+        },
+        {
+          "name": "r5",
+          "type": "i128*",
+          "visibility": ""
+        },
+        {
+          "name": "r2",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r3",
+          "type": "i128*",
+          "visibility": ""
+        },
+        {
+          "name": "r4",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "self.caller",
+          "type": "i128*",
+          "visibility": ""
+        },
+        {
+          "name": "r7",
+          "type": "i1*",
+          "visibility": ""
+        },
+        {
+          "name": "r6",
+          "type": "i64*",
+          "visibility": ""
+        }
+      ],
+      "returns": [
+        {
+          "name": "r8",
+          "type": "%Bid = type { i128, i64, i128, i64, i1 }",
+          "visibility": "private"
+        }
+      ]
+    },
+    {
+      "name": "finish",
+      "arguments": [
+        {
+          "name": "self.caller",
+          "type": "i128",
+          "visibility": "public"
+        },
+        {
+          "name": "r0",
+          "type": "%Bid = type { i128, i64, i128, i64, i1 }",
+          "visibility": "private"
+        }
+      ],
+      "variables": [
+        {
+          "name": "r0",
+          "type": "%Bid*",
+          "visibility": ""
+        },
+        {
+          "name": "r1",
+          "type": "%Bid*",
+          "visibility": ""
+        },
+        {
+          "name": "self.caller",
+          "type": "i128*",
+          "visibility": ""
+        }
+      ],
+      "returns": [
+        {
+          "name": "r1",
+          "type": "%Bid = type { i128, i64, i128, i64, i1 }",
+          "visibility": "private"
+        }
+      ]
+    }
+  ]
+}

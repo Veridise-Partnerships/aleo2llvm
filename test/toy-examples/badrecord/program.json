@@ -1,0 +1,10 @@
+{
+    "program": "badrecord.aleo",
+    "version": "0.0.0",
+    "description": "",
+    "development": {
+        "private_key": "APrivateKey1zkpDgHVtMHJ7Bss26vwtJuN5zTmM8vcQm9UwKiwB7MNLXsm",
+        "address": "aleo1s96ejajagmnxhcvcpklssfmmsedgm9uer8tunzpunrsmdh9d0cqslusckh"
+    },
+    "license": "MIT"
+}

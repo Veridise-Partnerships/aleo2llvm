@@ -1,0 +1,10 @@
+{
+    "program": "conditional.aleo",
+    "version": "0.0.0",
+    "description": "",
+    "development": {
+        "private_key": "APrivateKey1zkpDTw94shDvdmwt7rywj3dis3W5tgN5LVW4S4zT6gZLkny",
+        "address": "aleo12yhylkhtqswuyqdlxksf35fstn2ctq6v92twqryng0ep02nkcc8sdtnn4n"
+    },
+    "license": "MIT"
+}

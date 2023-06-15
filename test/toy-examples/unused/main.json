@@ -1,0 +1,64 @@
+{
+  "module": "us.aleo",
+  "functions": [
+    {
+      "name": "main",
+      "arguments": [
+        {
+          "name": "self.caller",
+          "type": "i128",
+          "visibility": "public"
+        },
+        {
+          "name": "r0",
+          "type": "i64",
+          "visibility": "public"
+        },
+        {
+          "name": "r1",
+          "type": "i64",
+          "visibility": "public"
+        },
+        {
+          "name": "r2",
+          "type": "i64",
+          "visibility": "public"
+        }
+      ],
+      "variables": [
+        {
+          "name": "r1",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r3",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "self.caller",
+          "type": "i128*",
+          "visibility": ""
+        },
+        {
+          "name": "r0",
+          "type": "i64*",
+          "visibility": ""
+        },
+        {
+          "name": "r2",
+          "type": "i64*",
+          "visibility": ""
+        }
+      ],
+      "returns": [
+        {
+          "name": "r3",
+          "type": "i64",
+          "visibility": "public"
+        }
+      ]
+    }
+  ]
+}
